@@ -2,6 +2,11 @@ target/
 .idea/
 .vscode/
 *.iml
+
+# Local environment / secrets
 .env
+.env.*
+!.env.example
+
 .DS_Store
 *.log
