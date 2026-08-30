@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: funding-request-service
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/funding_db}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+  flyway:
+    enabled: true
+
+server:
+  port: ${PORT:8080}
